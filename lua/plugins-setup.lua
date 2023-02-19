@@ -110,6 +110,9 @@ return packer.startup(function(use)
   -- toggle terminal
   use("akinsho/toggleterm.nvim")
 
+  -- hop
+  use("phaazon/hop.nvim")
+
   if packer_bootstrap then
     require("packer").sync()
   end
