@@ -113,6 +113,9 @@ return packer.startup(function(use)
   -- hop
   use("phaazon/hop.nvim")
 
+  -- scrollbar
+  use("petertriho/nvim-scrollbar")
+
   if packer_bootstrap then
     require("packer").sync()
   end
