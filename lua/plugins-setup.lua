@@ -84,7 +84,6 @@ return packer.startup(function(use)
       { "nvim-treesitter/nvim-treesitter" },
     },
   }) -- enhanced lsp uis
-  use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
   use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 
   -- formatting & linting
@@ -115,9 +114,6 @@ return packer.startup(function(use)
 
   -- scrollbar
   use("petertriho/nvim-scrollbar")
-
-  --  cocvim
-  use({ "neoclide/coc.nvim", branch = "release" })
 
   if packer_bootstrap then
     require("packer").sync()
