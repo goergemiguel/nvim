@@ -116,6 +116,9 @@ return packer.startup(function(use)
   -- scrollbar
   use("petertriho/nvim-scrollbar")
 
+  --  cocvim
+  use({ "neoclide/coc.nvim", branch = "release" })
+
   if packer_bootstrap then
     require("packer").sync()
   end
