@@ -115,6 +115,18 @@ return packer.startup(function(use)
   -- scrollbar
   use("petertriho/nvim-scrollbar")
 
+  -- dashboard
+  use({
+    "glepnir/dashboard-nvim",
+    event = "VimEnter",
+    config = function()
+      require("dashboard").setup({
+        -- config
+      })
+    end,
+    requires = { "nvim-tree/nvim-web-devicons" },
+  })
+
   if packer_bootstrap then
     require("packer").sync()
   end
