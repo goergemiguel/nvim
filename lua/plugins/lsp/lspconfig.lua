@@ -45,6 +45,9 @@ for type, icon in pairs(signs) do
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end
 
+-- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
+-- Available language servers
+
 -- configure html server
 lspconfig["html"].setup({
   capabilities = capabilities,
@@ -112,4 +115,10 @@ lspconfig["eslint"].setup({
 lspconfig["gopls"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
+})
+
+lspconfig["svelte"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+  filetypes = { "svelte" },
 })
