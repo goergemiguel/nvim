@@ -6,7 +6,7 @@ end
 toggleterm.setup({
   open_mapping = [[<leader>tt]],
   size = 20,
-  direction = "horizontal",
+  direction = "float",
 })
 
 function _G.set_terminal_keymaps()
