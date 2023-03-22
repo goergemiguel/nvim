@@ -118,6 +118,9 @@ return packer.startup(function(use)
   -- golang
   use("fatih/vim-go")
 
+  -- session manager
+  use("Shatur/neovim-session-manager")
+
   if packer_bootstrap then
     require("packer").sync()
   end
