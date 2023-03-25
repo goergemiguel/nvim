@@ -1,3 +1,3 @@
 return {
-  "rafamadriz/friendly-snippets", -- useful snippets
+	"rafamadriz/friendly-snippets", -- useful snippets
 }
