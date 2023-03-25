@@ -1,4 +1,15 @@
--- import nvim-treesitter plugin safely
+return {
+    "nvim-treesitter/nvim-treesitter",
+    build = function()
+      local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
+      ts_update()
+    end,
+    dependencies = {
+      "windwp/nvim-ts-autotag", -- autoclose tags
+    },
+  config = function()
+
+    -- import nvim-treesitter plugin safely
 local status, treesitter = pcall(require, "nvim-treesitter.configs")
 if not status then
   return
@@ -36,3 +47,6 @@ treesitter.setup({
   -- auto install above language parsers
   auto_install = true,
 })
+
+  end,
+}
