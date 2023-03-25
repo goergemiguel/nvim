@@ -32,5 +32,6 @@
   "toggleterm.nvim": { "branch": "main", "commit": "0aa936445b895cd5d3387860f96ce424ce32b072" },
   "vim-go": { "branch": "master", "commit": "c8c152cf4c5104483321cbc784e165eff10052ca" },
   "vim-maximizer": { "branch": "master", "commit": "2e54952fe91e140a2e69f35f22131219fcd9c5f1" },
-  "vim-tmux-navigator": { "branch": "master", "commit": "cdd66d6a37d991bba7997d593586fc51a5b37aa8" }
+  "vim-tmux-navigator": { "branch": "master", "commit": "cdd66d6a37d991bba7997d593586fc51a5b37aa8" },
+  "which-key.nvim": { "branch": "main", "commit": "87b1459b3e0be0340da2183fc4ec8a00b2960678" }
 }
