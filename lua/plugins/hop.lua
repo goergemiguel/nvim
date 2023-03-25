@@ -3,4 +3,6 @@ return {
 	config = function()
 		require("hop").setup()
 	end,
+	lazy = true,
+	cmd = "HopWord",
 }

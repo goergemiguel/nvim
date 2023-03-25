@@ -2,6 +2,8 @@ return {
 	{
 		-- managing & installing lsp servers, linters & formatters
 		"williamboman/mason.nvim", -- in charge of managing lsp servers, linters & formatters
+		lazy = true,
+		event = "BufRead",
 		config = function()
 			-- enable mason
 			require("mason").setup()

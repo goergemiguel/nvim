@@ -1,6 +1,7 @@
 return {
 	"EdenEast/nightfox.nvim", -- preferred colorscheme
-	lazy = false,
+	lazy = true,
+	event = "BufRead",
 	config = function()
 		vim.cmd("colorscheme terafox")
 	end,

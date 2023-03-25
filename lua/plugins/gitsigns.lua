@@ -3,4 +3,6 @@ return {
 	config = function()
 		require("gitsigns").setup()
 	end,
+	lazy = true,
+	event = "BufRead",
 }

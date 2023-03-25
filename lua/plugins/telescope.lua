@@ -1,7 +1,8 @@
 return {
 	{
 		"nvim-telescope/telescope.nvim",
-		branch = "0.1.x", -- fuzzy finder
+		lazy = true,
+		event = "BufRead",
 		config = function()
 			local actions = require("telescope.actions")
 			-- configure telescope

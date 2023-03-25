@@ -1,6 +1,7 @@
 return {
 	"folke/which-key.nvim",
-	lazy = false,
+	lazy = true,
+	event = "BufRead",
 	config = function()
 		vim.o.timeout = true
 		vim.o.timeoutlen = 500
