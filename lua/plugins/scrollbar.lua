@@ -1,5 +1,7 @@
 return {
 	"petertriho/nvim-scrollbar",
+	lazy = true,
+	event = "BufRead",
 	config = function()
 		require("scrollbar").setup({
 			handlers = {
@@ -7,6 +9,4 @@ return {
 			},
 		})
 	end,
-	lazy = true,
-	event = "BufRead",
 }

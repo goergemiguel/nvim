@@ -61,5 +61,5 @@ return {
 		event = "InsertEnter",
 	},
 	{ "hrsh7th/cmp-buffer", lazy = true, event = "InsertEnter" }, -- source for text in buffer
-	{ "hrsh7th/cmp-path", lazy = true, event = "BufRead" }, -- source for file system paths
+	{ "hrsh7th/cmp-path", lazy = true, event = "InsertEnter" }, -- source for file system paths
 }

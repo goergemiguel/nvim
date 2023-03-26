@@ -1,9 +1,7 @@
 return {
 	"akinsho/toggleterm.nvim",
 	lazy = true,
-	keys = {
-		"<leader>tt",
-	},
+	keys = "<leader>tt",
 	config = function()
 		require("toggleterm").setup({
 			open_mapping = [[<leader>tt]],

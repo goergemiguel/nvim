@@ -2,7 +2,7 @@ return {
 	{
 		"nvim-telescope/telescope.nvim",
 		lazy = true,
-		event = "BufRead",
+		cmd = "Telescope",
 		config = function()
 			local actions = require("telescope.actions")
 			-- configure telescope
