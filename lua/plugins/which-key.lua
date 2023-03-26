@@ -1,7 +1,7 @@
 return {
 	"folke/which-key.nvim",
 	lazy = true,
-	event = "BufRead",
+	event = "InsertEnter",
 	config = function()
 		vim.o.timeout = true
 		vim.o.timeoutlen = 500

@@ -1,6 +1,8 @@
 return {
 	{
 		"onsails/lspkind.nvim", -- vs-code like icons for autocompletion
+		lazy = true,
+		event = "InsertEnter",
 		config = function() end,
 	},
 	{
@@ -45,6 +47,8 @@ return {
 	},
 	{
 		"L3MON4D3/LuaSnip", -- snippet engine
+		lazy = true,
+		event = "InsertEnter",
 		config = function()
 			-- load vs-code like snippets from plugins (e.g. friendly-snippets)
 			require("luasnip/loaders/from_vscode").lazy_load()
@@ -53,7 +57,9 @@ return {
 	},
 	{
 		"saadparwaiz1/cmp_luasnip", -- for autocompletion
+		lazy = true,
+		event = "InsertEnter",
 	},
-	{ "hrsh7th/cmp-buffer" }, -- source for text in buffer
-	{ "hrsh7th/cmp-path" }, -- source for file system paths
+	{ "hrsh7th/cmp-buffer", lazy = true, event = "InsertEnter" }, -- source for text in buffer
+	{ "hrsh7th/cmp-path", lazy = true, event = "BufRead" }, -- source for file system paths
 }

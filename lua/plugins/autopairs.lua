@@ -1,7 +1,7 @@
 return {
 	"windwp/nvim-autopairs",
 	lazy = true,
-	event = "BufRead",
+	event = "InsertEnter",
 	config = function()
 		require("nvim-autopairs").setup({
 			check_ts = true, -- enable treesitter

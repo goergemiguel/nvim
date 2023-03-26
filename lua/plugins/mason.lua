@@ -11,6 +11,8 @@ return {
 	},
 	{
 		"williamboman/mason-lspconfig.nvim", -- bridges gap b/w mason & lspconfig
+		lazy = true,
+		event = "BufRead",
 		config = function()
 			require("mason-lspconfig").setup({
 				-- list of servers for mason to install
@@ -30,6 +32,8 @@ return {
 	{
 
 		"jayp0521/mason-null-ls.nvim", -- bridges gap b/w mason & null-ls
+		lazy = true,
+		event = "BufRead",
 		config = function()
 			require("mason-null-ls").setup({
 				-- list of formatters & linters for mason to install

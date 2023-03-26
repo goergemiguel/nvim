@@ -127,6 +127,8 @@ return {
 	},
 	{
 		"hrsh7th/cmp-nvim-lsp", -- for autocompletion"
+		lazy = true,
+		event = "InsertEnter",
 		config = function()
 			-- import cmp-nvim-lsp plugin safely
 			local cmp_nvim_lsp_status, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")

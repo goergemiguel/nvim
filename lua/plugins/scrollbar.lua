@@ -7,5 +7,6 @@ return {
 			},
 		})
 	end,
-	event = "BufEnter",
+	lazy = true,
+	event = "BufRead",
 }
