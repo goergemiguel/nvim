@@ -1,6 +1,8 @@
 return {
 	-- file explorer
 	"nvim-tree/nvim-tree.lua",
+	lazy = true,
+	cmd = "NvimTreeToggle",
 	config = function()
 		-- recommended settings from nvim-tree documentation
 		vim.g.loaded_netrw = 1
