@@ -31,7 +31,7 @@ keymap.set("n", "<leader>sk", "<C-w>k") -- move to window above
 keymap.set("n", "<leader>sl", "<C-w>l") -- move to window right
 
 -- clear search
-keymap.set("n", "<leader>h", ":nohlsearch<CR>")
+keymap.set("n", "<leader>x", ":nohlsearch<CR>")
 
 ----------------------
 -- Plugin Keybinds
