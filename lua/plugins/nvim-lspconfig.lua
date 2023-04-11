@@ -3,6 +3,9 @@ return {
 	"neovim/nvim-lspconfig", -- easily configure language servers,
 	lazy = true,
 	event = "BufRead",
+	dependencies = {
+		"glepnir/lspsaga.nvim",
+	},
 	config = function()
 		local lspconfig = require("lspconfig")
 		local keymap = vim.keymap -- for conciseness

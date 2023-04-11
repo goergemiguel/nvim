@@ -1,6 +1,6 @@
 return {
-	"EdenEast/nightfox.nvim", -- preferred colorscheme
+	"folke/tokyonight.nvim", -- preferred colorscheme
 	config = function()
-		vim.cmd("colorscheme terafox")
+		vim.cmd("colorscheme tokyonight-night")
 	end,
 }
