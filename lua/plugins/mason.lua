@@ -23,9 +23,11 @@ return {
 					"tailwindcss",
 					"lua_ls",
 					"emmet_ls",
+					"volar",
+					"eslint",
+					"svelte",
+					"gopls",
 				},
-				-- auto-install configured servers (with lspconfig)
-				automatic_installation = true, -- not the same as ensure_installed
 			})
 		end,
 	},
@@ -41,8 +43,6 @@ return {
 					"prettier", -- ts/js formatter
 					"stylua", -- lua formatter
 				},
-				-- auto-install configured formatters & linters (with null-ls)
-				automatic_installation = true,
 			})
 		end,
 	},

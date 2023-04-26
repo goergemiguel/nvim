@@ -39,6 +39,8 @@ return {
 				"vim",
 				"dockerfile",
 				"gitignore",
+				"go",
+				"vue",
 			},
 			-- auto install above language parsers
 			auto_install = true,
