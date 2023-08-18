@@ -26,6 +26,7 @@ return {
 					extra_filetypes = { "svelte" },
 				}), -- js/ts formatter
 				formatting.stylua, -- lua formatter
+				formatting.rustfmt, -- rust formatter
 			},
 			-- configure format on save
 			on_attach = function(current_client, bufnr)

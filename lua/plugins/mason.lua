@@ -27,6 +27,7 @@ return {
 					"eslint",
 					"svelte",
 					"gopls",
+					"rust_analyzer",
 				},
 			})
 		end,
