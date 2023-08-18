@@ -1,6 +1,17 @@
 return {
-	"folke/tokyonight.nvim", -- preferred colorscheme
+	"rebelot/kanagawa.nvim", -- preferred colorscheme
 	config = function()
-		vim.cmd("colorscheme tokyonight-night")
+		require("kanagawa").setup({
+			colors = {
+				theme = {
+					all = {
+						ui = {
+							bg_gutter = "none",
+						},
+					},
+				},
+			},
+		})
+		vim.cmd("colorscheme kanagawa-dragon")
 	end,
 }

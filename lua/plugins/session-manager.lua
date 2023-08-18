@@ -24,7 +24,6 @@ return {
 
 		-- save session on save buffer
 		vim.api.nvim_create_autocmd({ "BufWritePost" }, {
-			group = config_group,
 			callback = function()
 				if vim.bo.filetype ~= "git" and not vim.bo.filetype ~= "gitcommit" then
 					session_manager.autosave_session()

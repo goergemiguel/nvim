@@ -9,6 +9,7 @@ return {
 	config = function()
 		local lspconfig = require("lspconfig")
 		local keymap = vim.keymap -- for conciseness
+		local util = require("lspconfig/util")
 
 		-- enable keybinds only for when lsp server available
 		local on_attach = function(client, bufnr)
@@ -128,6 +129,20 @@ return {
 			capabilities = capabilities,
 			on_attach = on_attach,
 			filetypes = { "svelte" },
+		})
+
+		lspconfig["rust_analyzer"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+			filetypes = { "rust" },
+			root_dir = util.root_pattern("Cargo.toml"),
+			settings = {
+				["rust-analyzer"] = {
+					cargo = {
+						allFeatures = true,
+					},
+				},
+			},
 		})
 	end,
 }
