@@ -1,7 +1,7 @@
 return {
 	"hrsh7th/nvim-cmp", -- completion plugin
 	lazy = true,
-	event = "InsertEnter",
+	event = "BufRead",
 	config = function()
 		local cmp = require("cmp")
 		local lspkind = require("lspkind")
