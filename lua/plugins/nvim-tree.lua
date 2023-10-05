@@ -17,8 +17,10 @@ return {
 						folder_arrow = false,
 					},
 				},
+				indent_width = 3,
 			},
 			view = {
+				side = "right",
 				width = 50,
 			},
 			-- disable window_picker for
