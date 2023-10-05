@@ -57,6 +57,7 @@ return {
 			filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
 			cmd = { "typescript-language-server", "--stdio" },
 			capabilities = capabilities,
+			root_dir = util.root_pattern(".git"),
 		})
 
 		-- configure css server
