@@ -28,6 +28,7 @@ return {
 					"svelte",
 					"gopls",
 					"rust_analyzer",
+					"csharp_ls",
 				},
 			})
 		end,
