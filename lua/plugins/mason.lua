@@ -33,19 +33,4 @@ return {
 			})
 		end,
 	},
-	{
-
-		"jayp0521/mason-null-ls.nvim", -- bridges gap b/w mason & null-ls
-		lazy = true,
-		event = "BufRead",
-		config = function()
-			require("mason-null-ls").setup({
-				-- list of formatters & linters for mason to install
-				ensure_installed = {
-					"prettier", -- ts/js formatter
-					"stylua", -- lua formatter
-				},
-			})
-		end,
-	},
 }
